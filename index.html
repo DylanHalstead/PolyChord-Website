@@ -6,14 +6,245 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <title>PolyChord</title>
 </head>
 <body>
-    <header>
-        <img src="images/headers/home-header.png" alt="home-header.png" class="header-img">
-        <nav>
+    <img src="images/headers/home-header.png" alt="home-header.png" class="header-img">
 
-        </nav>
-    </header>
+
+    <nav class="navbar">
+        <img src="images/logos/logo-white.png" alt="nav-logo.png" class="nav-branding">
+
+        <ul class="nav-menu">
+            <a href="index.html" class="nav-link">
+                <li class="nav-item current-nav">
+                    Home
+                </li>
+            </a>
+            <a href="about.html" class="nav-link">
+                <li class="nav-item">
+                    About Us
+                </li>
+            </a>
+            <li class="nav-item-dropdown">
+                <div class="dropdown">
+                    <button class="dropdown-btn">Products</button> <i class="material-symbols-rounded">expand_more</i>
+                    <ul class="dropdown-content">
+                        <li><a href="midas.html">MIDAS</a></li>
+                        <li><a href="polytrack.html">PolyTrack</a></li>
+                        <li><a href="polystructure.html">PolyStructure</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item-dropdown">
+                <div class="dropdown">
+                    <button class="dropdown-btn">R&D</button> <i class="material-symbols-rounded">expand_more</i>
+                    <ul class="dropdown-content">
+                        <li><a href="food-science.html">Food Science</a></li>
+                        <li><a href="polyaffinity.html">PolyAffinity</a></li>
+                        <li><a href="polynet.html">PolyNet</a></li>
+                    </ul>
+                </div>
+            </li>
+            <a href="contact.html" class="nav-link">
+                <li class="nav-item">
+                    Contact Us
+                </li>
+            </a>
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <h1 id="applicaitons-header">Applications in Action</h1>
+    <!-- <button id="prev-button" class="carousel__btn carousel__btn--left"><img src="images/icons/arrow-back.svg" alt="arrow-back.svg"></button>
+    <div id="slider-container-outer">
+        <div id="slider-container" class="slider-container-transition">
+            <div class="slider-item" data-position="1">
+                <a href="midas.html">
+                    <div class="applicaiton">
+                        <img src="images/icons/sensor.png" alt="sensor.png" class="application__icon">
+                        <h4 class="application__title">
+                            MIDAS
+                        </h4>
+                        <p class="application__intro">
+                            Optimising the placement of transmitters/receivers in networks to minimise costs, maximise coverage, and guarantee robustness.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="slider-item" data-position="2">
+                <a href="polytrack.html">
+                    <div class="applicaiton">
+                        <img src="images/icons/train.png" alt="train.png" class="application__icon">
+                        <h4 class="application__title">
+                            PolyTrack
+                        </h4>
+                        <p class="application__intro">
+                            Providing more informed maintenance regimes for infrastructure through data-driven methods.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="slider-item" data-position="3">
+                <a href="polystructure.html">
+                    <div class="applicaiton">
+                        <img src="images/icons/bridge.png" alt="bridge.png" class="application__icon">
+                        <h4 class="application__title">
+                            PolyStructure
+                        </h4>
+                        <p class="application__intro">
+                            Providing smarter maintenance<br>regimes for infrastructure through data-driven methods.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="slider-item" data-position="4">
+                <a href="food-science.html">
+                    <div class="applicaiton">
+                        <img src="images/icons/food-science.png" alt="food-science.png" class="application__icon">
+                        <h4 class="application__title">
+                            Food Science
+                        </h4>
+                        <p class="application__intro">
+                            Predict with confidence the growth and death rates of pathogens in stored foods such as grains, nuts and cereals.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="slider-item" data-position="5">
+                <a href="polynet.html">
+                    <div class="applicaiton">
+                        <img src="images/icons/neural.png" alt="neural.png" class="application__icon">
+                        <h4 class="application__title">
+                            PolyNet
+                        </h4>
+                        <p class="application__intro">
+                            Offering unique insights into modern machine learning, using principled Bayesian inference to build explainable systems
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="slider-item" data-position="6">
+                <a href="polyaddinity.html">
+                    <div class="applicaiton">
+                        <img src="images/icons/protien.png" alt="protien.png" class="application__icon">
+                        <h4 class="application__title">
+                            PolyAffinity
+                        </h4>
+                        <p class="application__intro">
+                            Capturing protein flexibility, calculating binding affinities, and predicting novel binding sites.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <button class="carousel__btn carousel__btn--right" id="next-button"><img src="images/icons/arrow-forward.svg" alt="arrow-forward.svg"></button> -->
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <li class="glide__slide">0</li>
+                <li class="glide__slide">1</li>
+                <li class="glide__slide">2</li>
+            </ul>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+        </div>
+    </div>      
+
+
+    <div id="why-polychord-container">
+        <div>
+            <img src="images/graphs/himmelblau.gif" alt="himmelblau.gif" id="why-polychord-img">
+            <p class="img-description">PolyChord Algorithm Parsing Himmelblau Function</p>
+        </div>
+        <div id="why-polychord-info-container">
+            <h3 id="why-polychord-header">Why PolyChord?</h3>
+            <p id="why-polychord-text">
+                PolyChord brings together true academic excellence in data science with commercial expertise to help you optimise your 
+                use of sensors. Unlike other data science companies, we have genuinely unique tools to enhance the placement of sensors 
+                in a network and extract useful information from noisy data sets. 
+            </p>
+        </div>
+    </div>
+
+    <div id="facts-container-outer">
+        <div id="facts-container">
+            <div class="fact">
+                <h1 class="fact-header">
+                    £1.5M
+                </h1>
+                <p class="fact-text">
+                    In Total Funding from Grants and Investments
+                </p>
+            </div>
+            <span class="fact-divider"></span>
+            <div class="fact">
+                <h1 class="fact-header">
+                    30+ Years
+                </h1>
+                <p class="fact-text">
+                    Years of Hands-On Experience in Data Science
+                </p>
+            </div>
+            <span class="fact-divider"></span>
+            <div class="fact">
+                <h1 class="fact-header">
+                    3x Growth
+                </h1>
+                <p class="fact-text">
+                    Of our Data Science Team in the Past Year
+                </p>
+            </div>
+            <span class="fact-divider"></span>
+            <div class="fact">
+                <h1 class="fact-header">
+                    100%
+                </h1>
+                <p class="fact-text">
+                    Of our Data Scientists are Postdoctoral Research Physicists
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="strengths-container">
+        <div class="strength">
+            <img src="images/icons/filter.png" alt="filter.png" class="strength-image">
+            <div class="strength-info-container">
+                <h4 class="strength-header">Dependable Data Even if Noisy or Incomplete</h4>
+                <p class="strength-text">Data collection is often the most resource-intensive part of the process of engaging with machine learning. PolyChord can handle “dirty” or even incomplete data sets without any lengthy preparation periods, allowing you to leverage the value of your existing datasets.</p>
+            </div>
+        </div>
+        <span class="strength-divider"></span>
+        <div class="strength">
+            <img class="strength-" src="images/icons/percent.svg" alt="percent.png" class="strength-image">
+            <div class="strength-info-container">
+                <h4 class="strength-header">Quantitative, Reliable Computations</h4>
+                <p class="strength-text">PolyChord gives you concrete percentages stating “how good” the solution it has created is. These calculations are done simultaneously with the solutions, and are vital in many applications where safety regulations are paramount. In Machine Learning or Neural Networks, you never have any certainty how good those answers are. This is a key strength for PolyChord.</p>
+            </div>
+        </div>
+        <span class="strength-divider"></span>
+        <div class="strength">
+            <img src="images/icons/gears.png" alt="hears.png" class="strength-image">
+            <div class="strength-info-container">
+                <h4 class="strength-header">Computationally Efficient</h4>
+                <p class="strength-text">PolyChord effectively maps the entire “data landscape” in a single run, as opposed to doing many short, random explorations of the landscape (like other tools). This makes it more a comprehensive, concrete sampling of a data landscape.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
