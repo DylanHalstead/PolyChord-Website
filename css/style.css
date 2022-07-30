@@ -34,34 +34,30 @@ body {
     font-family: 'Open Sans', Arial;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
     color: #292929;
     background: #F6F4F3;
 }
 
-.header-img {
-    width: 100%;
-    height: 50vh;
-    /* Issues with sticky nav sticking with header image */
-    margin-bottom: -.9vh;
+p {
+    line-height: 26px;
 }
 
 h1 {
     font-family: 'Montserrat', Arial;
     font-weight: 700;
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 h2 {
     font-family: 'Montserrat', Arial;
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 2.25em;
 }
 
 h3 {
     font-family: 'Montserrat', Arial;
     font-weight: 700;
-    font-size: 2.25em;
+    font-size: 2em;
 }
 
 h4 {
@@ -75,6 +71,39 @@ h4 {
     font-size: 14px;
 }
 
+#homepage-intro__header {
+    color: #F6F4F3;
+    font-size: 5.25vw;
+}
+
+#homepage-intro__text {
+    color: #F6F4F3;
+    font-style: italic;
+    font-size: 1.5vw;
+}
+
+/* Headers */
+.intro-container {
+    position: relative;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.intro__header {
+    position: absolute;
+    color: #F6F4F3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.intro__background {
+    width: 100vw;
+    object-fit: cover;
+    margin-bottom: -1.5vh;
+    opacity: .5;
+}
+
 /* Navbar */
 .navbar{
     background-color: #232F5D;
@@ -86,8 +115,9 @@ h4 {
     align-items: center;
     padding: 0 24px;
     position: sticky;
+    z-index: 2;
     top: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 4em;
 }
 
 .nav-link {
@@ -145,10 +175,6 @@ h4 {
     background-color: #F6F4F3;
 }
 
-.dropdown {
-    position: relative;
-}
-
 .dropdown-content {
     margin-top: 14px;
     font-family: 'Open Sans', Arial;
@@ -159,7 +185,6 @@ h4 {
     width: 130px;
     display: flex;
     flex-direction: column;
-
     transform: translateY(10px);
     opacity: 0;
     pointer-events: none;
@@ -172,22 +197,22 @@ h4 {
     pointer-events: all;
 }
 
-.dropdown-content li {
+.dropdown-item {
     padding: 10px 0;
     border-right: 5px #232F5D solid;
     border-left: 5px rgba(246, 244, 243, 0) solid;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
+    color: #F6F4F3;
 }
 
-.dropdown-content li:hover {
+.dropdown-item:hover {
     border-left: 5px rgba(246, 244, 243, .5) solid;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
 }
 
-.dropdown-content a {
-    color: #F6F4F3;
+.dropdown-item-link {
     text-decoration: none;
 }
 
@@ -202,16 +227,107 @@ h4 {
     cursor: pointer;
 }
 
+/* Footer */
+.footer-container {
+    margin-top: 40px;
+    background-color: #232F5D;
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__socials-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.social__img {
+    width: 30px;
+    margin: 0 20px;
+}
+
+.footer__info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text {
+    color: #F6F4F3;
+    font-style: italic;
+    font-size: .9em;
+}
+
+.footer__text-link {
+    color: #F6F4F3;
+    text-decoration: none;
+}
+
+.footer__text-link:hover {
+    text-decoration: underline solid;
+}
+
+.footer__bullet {
+    background-color: #F6F4F3;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    margin: 0 30px;
+}
+
+
+/* HOME */
+/* Homepage Header */
+#homepage-intro-container {
+    position: relative;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#homepage-intro__background {
+    width: 100vw;
+    object-fit: cover;
+    margin-bottom: -1.5vh;
+    opacity: .5;
+}
+
+#homepage-intro__info-container {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    z-index: 1;
+}
+
+#homepage-intro__header {
+    color: #F6F4F3;
+    font-size: 5.25vw;
+}
+
+#homepage-intro__text {
+    color: #F6F4F3;
+    font-style: italic;
+    font-size: 1.5vw;
+}
+
 /* Applications in Action/Carousel */
 #applicaitons-header {
     color: #232F5D;
     text-align: center;
+    margin-bottom: 1.2em;
 }
 
 .applicaiton {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.application__link {
+    text-decoration: none;
+    color: #292929;
 }
 
 .application__icon {
@@ -226,34 +342,46 @@ h4 {
     text-align: center;
 }
 
-.carousel__btn {
-    background: transparent;
-    border: 0;
+.application__btn {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50%;
     cursor: pointer;
+    transform: translateY(-50%);
+    line-height: 1;
 }
 
-#slider-container-outer {
-	overflow: hidden;
+.application__btn-prev {
+    left: -3%;
 }
 
-#slider-container {
-	display: flex;
-	flex-wrap: nowrap;
-    justify-content: center;
+.application__btn-next {
+    right: -3%;
 }
 
-.slider-container-transition {
-	transition: transform 0.7s ease-in-out;
+.application__btn__img {
+    width: 25px;
+    height: 25px;
 }
 
-.slider-item {
-	width: 350px;
-	flex-shrink: 0;
+.glide-container {
+    width: 75%;
+    display: flex;
+    margin: 0 auto 8em auto;
 }
 
-.slider-item a {
-    text-decoration: none;
-    color: #292929;
+.glide__slide {
+    border-radius: 10px;
+    height: 250px;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.glide__slide:hover .application__title {
+    color: #232F5D;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
 }
 
 /* Why PolyChord */
@@ -263,6 +391,7 @@ h4 {
     justify-content: space-around;
     align-items: flex-start;
     margin: 0 auto;
+    margin-bottom: 8em;
 }
 
 #why-polychord-img {
@@ -270,11 +399,17 @@ h4 {
     width: 500px;
 }
 
-#why-polychord-header {
+#why-polychord__header {
     margin-bottom: 30px;
+    color: #232F5D;
 }
 
-#why-polychord-info-container {
+#why-polychord__text {
+    font-size: 1.25em;
+    line-height: 1.75em;
+}
+
+#why-polychord__info-container {
     max-width: 500px;
 }
 
@@ -282,6 +417,7 @@ h4 {
 #facts-container-outer {
     background-color: #232F5D;
     justify-content: space-between;
+    margin-bottom: 8em;
 }
 
 #facts-container {
@@ -293,13 +429,13 @@ h4 {
     padding: 50px 0;
 }
 
-.fact-header {
+.fact__header {
     color: #F6F4F3;
     margin-bottom: 40px;
     text-align: center;
 }
 
-.fact-text {
+.fact__text {
     color: #F6F4F3;
     text-align: center;
     max-width: 240px;
@@ -307,7 +443,7 @@ h4 {
     font-weight: 200;
 }
 
-.fact-divider {
+.fact__divider {
     background-color: #F6F4F3;
     height: 200px;
     margin: 0 30px;
@@ -329,31 +465,97 @@ h4 {
     display: flex;
     align-items: flex-start;
     margin: 40px 0;
+    max-width: 1150px;
 }
 
-.strength-image {
+.strength__image {
     width: 200px;
     height: 200px;
+    margin-right: 1.25em;
 }
 
-.strength-info-container {
-    max-width: 800px;
+.strength__info-container {
+    margin-left: 1.25em;
 }
 
-.strength-header {
+.strength__header {
     color: #232F5D;
     margin-bottom: 15px;
 }
 
-.strength-divider {
+.strength__divider {
     background-color: #a2a2a2;
     height: 1px;
-    width: 1200px;
+    width: 85vw;
     border: 1px #a2a2a2 solid;
     border-radius: 1px;
 }
 
+.strength__text {
+    font-size: 1.25em;
+    line-height: 1.75em;
+}
+
+
+/* ABOUT US */
+/* What is PolyChord? */
+/* Meet the Team */
+#employees-container {
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.employee {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    max-width: 1150px;
+}
+
+.employee__image {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    margin-right: 30px;
+}
+
+.employee__info-container {
+    margin-left: 30px;
+}
+
+.employee__title {
+    color: #232F5D;
+    font-size: 1.3em;
+    font-style: italic;
+    text-decoration: underline solid;
+}
+
+.employee__text {
+    font-size: 1.1em;
+}
+
+
 @media(max-width: 768px){
+    body {
+        font-size: .8em;
+    }
+
+    h1 {
+        font-size: 2em
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.4em;
+    }
+
     /* Navbar */
     .hamburger{
         display: block;
@@ -373,9 +575,9 @@ h4 {
     }
 
     .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
+        position: absolute;
+        left: -150%;
+        top: 50px;
         gap: 0;
         flex-direction: column;
         background-color: #232F5D;
@@ -384,27 +586,106 @@ h4 {
         transition: 0.3s;
     }
 
-    .nav-item {
-        padding: 16px 0;
-        width: 100vw;
-    }
-
-    .nav-item-dropdown {
-        width: 100vw;
-    }
-
     .nav-menu.active {
         left: 0;
     }
 
     .current-nav {
-        border-top: none;
-        border-bottom: none;
-        border-left: 15px rgba(246, 244, 243, .5) solid;
+        border-left: 15px rgba(246, 244, 243, .5) solid !important;
         border-right: 15px #232F5D solid;
     }
 
     .nav-branding {
         margin-left: 0px;
     }
+
+    .nav-item {
+        padding: 16px 0;
+        width: 100vw;
+        border-top: none;
+        border-bottom: none;
+        border-left: 15px rgba(246, 244, 243, 0) solid;
+        border-right: 15px #232F5D solid;
+        z-index: 2;
+    }
+
+    .nav-link {
+        background-color: #232F5D;
+        z-index: 2;
+    }
+    
+    .nav-item:hover {
+        border-top: none;
+        border-bottom: none;
+        border-left: 15px rgba(246, 244, 243, .5) solid;
+        -webkit-transition: 0.2s ease;
+        transition: 0.2s ease;
+    }
+
+    .nav-item-dropdown {
+        width: 100vw;
+        border-top: none;
+        border-bottom: none;
+        background-color: #232F5D;
+        padding-top: 16px;
+    }
+
+    .dropdown-content {
+        width: 100%;
+        position: relative;
+        max-height: 0;
+        margin: 0;
+        opacity: 0;
+        transform: translateY(-100px);
+        -webkit-transition: max-height 0.5s ease;
+        transition: max-height 0.5s ease;
+    }
+
+    .nav-item-dropdown.active .dropdown-content, .nav-item-dropdown.active:hover .dropdown-content {
+        max-height: 500px;
+        transform: translateY(5px);
+        opacity: 1;
+        -webkit-transition: max-height 1s ease;
+        transition: max-height 1s ease;
+    }
+
+    .nav-item-dropdown.active .dropdown-item
+    {
+        border-left: 15px rgba(246, 244, 243, 0) solid;
+        border-right: 15px #232F5D solid;
+        z-index: 4;
+    }
+
+    .nav-item-dropdown.active .dropdown-item:hover
+    {
+        border-left: 15px rgba(246, 244, 243, .5) solid;
+    }
+    
+    .dropdown-item {
+        padding: 16px 0;
+    }
+
+    .dropdown-content {
+        transform: none;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .nav-item-dropdown:hover .dropdown-content {
+        transform: none;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+
+    /* Applications in Action/Carousel */
+
+    /* Why PolyChord */
+
+
+    /* Facts */
+
+
+    /* Strengths */
+
 }
