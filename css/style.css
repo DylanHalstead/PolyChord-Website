@@ -272,6 +272,10 @@ h4 {
     margin: 0 30px;
 }
 
+.segment-title {
+    color: #232F5D;
+    padding-left: 100px;
+}
 
 /* HOME */
 /* Homepage Header */
@@ -540,10 +544,6 @@ h4 {
 
 
 /* Meet the Team */
-#employees-title {
-    color: #232F5D;
-    padding-left: 100px;
-}
 
 #employees-container {
     display: flex;
