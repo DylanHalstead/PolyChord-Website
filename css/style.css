@@ -85,7 +85,7 @@ h4 {
     height: 350px;
     object-fit: cover;
     margin-bottom: -1vh;
-    opacity: .3;
+    opacity: .4;
 }
 
 /* Navbar */
@@ -299,7 +299,7 @@ h4 {
     height: 350px;
     object-fit: cover;
     margin-bottom: -1vh;
-    opacity: .3;
+    opacity: .4;
 }
 
 #homepage-intro__info-container {
@@ -695,6 +695,7 @@ h4 {
 #contact__form__message {
     font-family: 'Open Sans', Arial;
     font-size: .75em;
+    resize: none;
 }
 
 @media(max-width: 768px){
