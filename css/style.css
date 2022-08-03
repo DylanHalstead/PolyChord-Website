@@ -64,24 +64,13 @@ h4 {
     text-align: right;
 }
 
-#homepage-intro__header {
-    color: #F6F4F3;
-    font-size: 5.25vw;
-}
-
-#homepage-intro__text {
-    color: #F6F4F3;
-    font-style: italic;
-    font-size: 1.5vw;
-}
-
 /* Headers */
-.intro-container {
+.header-container {
     position: relative;
     background-color: rgba(0, 0, 0, 1);
 }
 
-.intro__header {
+.header__text {
     position: absolute;
     color: #F6F4F3;
     top: 50%;
@@ -90,9 +79,9 @@ h4 {
     z-index: 1;
 }
 
-.intro__background {
+.header__background {
     width: 100vw;
-    height: 50vh;
+    height: 350px;
     object-fit: cover;
     margin-bottom: -1.5vh;
     opacity: .3;
@@ -110,9 +99,7 @@ h4 {
     position: sticky;
     z-index: 2;
     top: 0px;
-    margin-bottom: 4em;
     height: 70px;
-    
 }
 
 .nav-link {
@@ -146,12 +133,12 @@ h4 {
 .nav-menu {
     display: flex;
     justify-content: space-between;
-    margin-right: 4em;
+    margin-right: .9em;
 }
 
 .nav-branding {
     width: 10em;
-    margin-left: 4em;
+    margin-left: 1.3em;
 }
 
 .hamburger {
@@ -295,38 +282,44 @@ h4 {
     background-color: rgba(0, 0, 0, 1);
 }
 
-#homepage-intro__background {
-    width: 100vw;
-    height: 350px;
-    object-fit: cover;
-    margin-bottom: -1.5vh;
-    opacity: .5;
-}
-
-#homepage-intro__info-container {
-    position: absolute;
-    top: 30%;
-    /* left: 148px; */
-    left: 95px;
-    z-index: 1;
-}
-
 #homepage-intro__header {
     color: #F6F4F3;
-    font-size: 5.25vw;
+    font-size: 4.5vw;
 }
 
 #homepage-intro__text {
     color: #F6F4F3;
     font-style: italic;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
+}
+
+#homepage-intro__background {
+    width: 100vw;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: -1vh;
+    opacity: .3;
+}
+
+#homepage-intro__info-container {
+    position: absolute;
+    top: 30%;
+    left: 95px;
+    z-index: 1;
+}
+
+#homepage-intro__text {
+    color: #F6F4F3;
+    font-style: italic;
+    font-size: 1.4vw;
+    font-weight: 500;
 }
 
 /* Applications in Action/Carousel */
 #applicaitons-header {
     color: #232F5D;
     text-align: center;
-    margin-bottom: 1.2em;
+    margin: 1.2em 0;
 }
 
 .applicaiton {
@@ -568,7 +561,6 @@ h4 {
 
 
 /* Meet the Team */
-
 #employees-container {
     display: flex;
     padding: 0 100px;
@@ -611,6 +603,13 @@ h4 {
     margin: 0 auto 100px auto;
 }
 
+/* MIDAS */
+/* POLYTRACK */
+/* POLYSTRUCTURE */
+/* POLYAFFINITY */
+/* POLYNET */
+/* FOOD SCIENCE */
+
 /* CONTACT US */
 .contact-background {
     width: 0;
@@ -623,7 +622,21 @@ h4 {
 .contact-container {
     position: absolute;
     display: flex;
+    justify-content: space-between;
     padding: 0 100px;
+    width: 100vw;
+}
+
+.contact__info-container {
+    max-width: 600px;
+}
+
+.contact__info__title {
+    margin-bottom: 1em;
+}
+
+.contact__info__text {
+    font-size: 1.25em;
 }
 
 .form-container {
@@ -632,9 +645,10 @@ h4 {
     padding: 50px;
     display: flex;
     flex-direction: column;
+    /* width: 600px; */
 }
 
-.form-container div {
+.contact__form__container {
     display: flex;
     flex-direction: column;
 }
@@ -646,37 +660,43 @@ h4 {
 }
 
 .contact__form__field {
-    border: 1px #a2a2a2 solid;
-    border-radius: 2px;
-    font-size: .9em;
+    border: 1px #A5A5A5 solid;
+    border-radius: 3px;
+    height: 2.5em;
     margin-bottom: 1em;
+    padding-left: .25em;
+    font-family: 'Open Sans', Arial;
+}
+
+.contact__form__half-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact__form__half-field {
-    border: 1px #a2a2a2 solid;
-    border-radius: 2px;
-    font-size: .9em;
+    border: 1px #A5A5A5 solid;
+    border-radius: 3px;
+    height: 2.5em;
     margin-bottom: 1em;
-    width: 40%;
+    padding-left: .25em;
+    width: 15em;
+    font-family: 'Open Sans', Arial;
 }
 
-
-@media(min-width:3840px){
-    body {
-        font-size: 2em;
-    }
+#contact__form__why-contacting {
+    border: 1px #A5A5A5 solid;
+    border-radius: 3px;
+    border-radius: 2px;
+    height: 2.5em;
+    margin-bottom: 1em;
+    width: 100%;
+    background-color: #FFF;
+    font-family: 'Open Sans', Arial;
 }
 
-@media(min-width: 2560px){
-    body {
-        font-size: 1.75em;;
-    }
-}
-
-@media(min-width: 1920px){
-    body {
-        font-size: 1.5em;
-    }
+#contact__form__message {
+    font-family: 'Open Sans', Arial;
+    font-size: .75em;
 }
 
 @media(max-width: 768px){
@@ -817,4 +837,22 @@ h4 {
 
     /* Strengths */
 
+}
+
+@media(min-width: 1920px){
+    body {
+        font-size: 1.5em;
+    }
+}
+
+@media(min-width: 2560px){
+    body {
+        font-size: 1.75em;
+    }
+}
+
+@media(min-width:3840px){
+    body {
+        font-size: 2em;
+    }
 }

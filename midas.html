@@ -14,9 +14,9 @@
     <title>MIDAS</title>
 </head>
 <body>
-    <div class="intro-container">
-        <h1 class="intro__header">MIDAS</h1>
-        <img src="images/headers/midas-header.jpg" alt="midas-header.jpg" class="intro__background">
+    <div class="header-container">
+        <h1 class="header__text">MIDAS</h1>
+        <img src="images/headers/midas-header.jpg" alt="midas-header.jpg" class="header__background">
     </div>
 
 
@@ -64,6 +64,80 @@
         </div>
     </nav>
 
+    <div class="page-intro">
+        <h2 class="intro__title">What is MIDAS?</h2>
+        <p class="intro__text">
+            The placement of sensors in a network is a complex, constantly changing data science problem. While many think guesswork is a 
+            good enough answer, PolyChord thought otherwise. After a 3-year work programme with the UK Ministry of Defence, Polychord has 
+            created MIDAS (Maximum Information Deployment Assessment Strategy) - a unique technology that calculates the best placement of 
+            transmitters in a network. 
+        </p>
+    </div>
+
+    <div class="with-midas-container">
+        <div class="midas-canvas" id="midas-canvas-1"></div>
+        <div class="with-midas__info">
+            <h2 class="with-midas__title">With MIDAS</h2>
+            <p class="with-midas__text">
+                You can see the dramatic increase in coverage compared to the too-common strategy of guessing the best placement. 
+                Compared to machine learning, a fancier version of guessing, MIDAS also gives you quantitative answers so you know 
+                exactly why your placement is best.
+            </p>
+        </div>
+    </div>
+
+    <div class="midas-strengths">
+        <div class="midas-strength-container">
+            <div class="midas-strength__info">
+                <h2 class="midas-strength__title">Optimising a Network for "Robustness"</h2>
+                <p class="midas-strength__text">
+                    If we find an optimal network layout, but most of the coverage comes from a single sensor, the network isn't very 
+                    robust, as a failure of that one sensor would massively disrupt the entire network. Instead, it's sometimes better 
+                    to want a network that may not be the most optimal but is resistant to individual sensor failures.
+                </p>
+            </div>
+            <div>
+                <div class="midas-canvas" id="midas-canvas-2"></div>
+                <p class="percent-right"><span id="percent-1">69.24</span>%</p>
+            </div>
+        </div> 
+        <div class="midas-strength-container">
+            <div>
+                <div class="midas-canvas" id="midas-canvas-3"></div>
+            </div>
+            <div class="midas-strength__info-right">
+                <h2 class="midas-strength__title-right">Built to Fit Your Exact Needs</h2>
+                <p class="midas-strength__text-right">
+                    With MIDAS, you can choose which parameters are most important for your network layout - e.g. best possible coverage, 
+                    the most cost-effective solution, the most “aesthetically pleasing” placement, etc. MIDAS can also optimise for a 
+                    combination of these goals. 
+                </p>
+            </div>
+        </div> 
+        <div class="midas-strength-container">
+            <div class="midas-strength__info">
+                <h2 class="midas-strength__title">Optimising a Network for “Robustness”</h2>
+                <p class="midas-strength__text">
+                    If we find an optimal network layout, but most of the coverage comes from a single sensor, the network isn't very 
+                    robust, as a failure of that one sensor would massively disrupt the entire network. Instead, it's sometimes better 
+                    to want a network that may not be the most optimal but is resistant to individual sensor failures.
+                </p>
+            </div>
+            <div>
+                <div class="midas-canvas" id="midas-canvas-4"></div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="page-outro">
+        <h2 class="outro__title">Want to Learn More?</h2>
+        <p class="outro__text">
+            This is just the tip of the iceberg for what MIDAS can do. From optimising the local wireless network in a business to 
+            optimising the locations of 5G masts in a large city, MIDAS is a vast, wide-ranging piece of software practical for an 
+            amplitude of telecommunication scenarios. To learn more, head to our <a href="contact.html" class="link">contact us</a> 
+            page and shoot us a message for more details.
+        </p>
+    </div>
 
     <footer>
         <div class="footer-container">
@@ -91,5 +165,9 @@
     </footer>
 
     <script src="js/hamburger.js"></script>
+    <script src="js/ray.js"></script>
+    <script src="js/boundary.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="js/sketch.js"></script>
 </body>
 </html>
