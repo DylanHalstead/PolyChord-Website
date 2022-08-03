@@ -68,6 +68,7 @@ h4 {
 .header-container {
     position: relative;
     background-color: rgba(0, 0, 0, 1);
+    margin-bottom: 75px;
 }
 
 .header__text {
@@ -83,7 +84,7 @@ h4 {
     width: 100vw;
     height: 350px;
     object-fit: cover;
-    margin-bottom: -1.5vh;
+    margin-bottom: -1vh;
     opacity: .3;
 }
 
@@ -591,9 +592,6 @@ h4 {
     color: #232F5D;
     font-style: italic;
     text-decoration: underline solid;
-}
-
-.employee__text {
 }
 
 /* PolyChord Timeline */
