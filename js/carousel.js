@@ -4,6 +4,12 @@ new Glide('.glide', {
     gap: 30,
     animationDuration: 750,
     breakpoints: {
+        2560: {
+            perView: 4
+        },
+        1920: {
+            perView: 3
+        },
         1024: {
             perView: 2
         },

@@ -26,7 +26,7 @@ body {
 }
 
 p {
-    line-height: 26px;
+    line-height: 1.25em;
 }
 
 h1 {
@@ -55,12 +55,12 @@ h4 {
 
 .img-description {
     font-style: italic;
-    font-size: 14px;
+    font-size: .75em;
 }
 
 .img-description-right {
     font-style: italic;
-    font-size: 14px;
+    font-size: .75em;
     text-align: right;
 }
 
@@ -92,25 +92,27 @@ h4 {
 
 .intro__background {
     width: 100vw;
+    height: 50vh;
     object-fit: cover;
     margin-bottom: -1.5vh;
-    opacity: .5;
+    opacity: .3;
 }
 
 /* Navbar */
 .navbar{
     background-color: #232F5D;
-    min-height: 50px;
     font-family: 'Montserrat', Arial;
-    font-size: 18px;
+    font-size: .9em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
+    padding: 0 1.2em;
     position: sticky;
     z-index: 2;
     top: 0px;
     margin-bottom: 4em;
+    height: 70px;
+    
 }
 
 .nav-link {
@@ -119,23 +121,24 @@ h4 {
 }
 
 .nav-item, .nav-item-dropdown {
-    width: 130px;
+    /* width: 6.5em; */
     text-align: center;
-    padding: 10px 0;
+    padding: 1em 1em;
     list-style: none;
     cursor: pointer;
-    border-top: 5px #232F5D solid;
-    border-bottom: 5px rgba(246, 244, 243, 0) solid;
+    border-top: .25em #232F5D solid;
+    border-bottom: .25em rgba(246, 244, 243, 0) solid;
     -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
+    height: 70px;
 }
 
 .current-nav {
-    border-bottom: 5px rgba(246, 244, 243, .5) solid;
+    border-bottom: .25em rgba(246, 244, 243, .5) solid;
 }
 
 .nav-item:hover {
-    border-bottom: 5px rgba(246, 244, 243, .5) solid;
+    border-bottom: .25em rgba(246, 244, 243, .5) solid;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
 }
@@ -143,14 +146,12 @@ h4 {
 .nav-menu {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-right: 80px;
+    margin-right: 4em;
 }
 
 .nav-branding {
-    width: 132px;
-    height: 35px;
-    margin-left: 80px;
+    width: 10em;
+    margin-left: 4em;
 }
 
 .hamburger {
@@ -169,19 +170,27 @@ h4 {
 }
 
 .dropdown-content {
-    margin-top: 14px;
+    margin-top: 2.05em;
     font-family: 'Open Sans', Arial;
-    font-size: 14px;
-    position: absolute;
+    font-size: .7em;
     list-style: none;
     background-color: #232F5D;
-    width: 130px;
+    position: absolute;
+    margin-left: -1.45em;
     display: flex;
     flex-direction: column;
-    transform: translateY(10px);
+    transform: translateY(.5em);
     opacity: 0;
     pointer-events: none;
     transition: all 0.4s ease;
+}
+
+#products-dropdown-content {
+    width: 135px;
+}
+
+#rd-dropdown-content {
+    width: 94px;
 }
 
 .nav-item-dropdown:hover .dropdown-content {
@@ -191,16 +200,17 @@ h4 {
 }
 
 .dropdown-item {
-    padding: 10px 0;
-    border-right: 5px #232F5D solid;
-    border-left: 5px rgba(246, 244, 243, 0) solid;
+    padding: .75em .5em;
+    width: 100%;
+    border-right: .25em #232F5D solid;
+    border-left: .25em rgba(246, 244, 243, 0) solid;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
     color: #F6F4F3;
 }
 
 .dropdown-item:hover {
-    border-left: 5px rgba(246, 244, 243, .5) solid;
+    border-left: .25em rgba(246, 244, 243, .5) solid;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
 }
@@ -210,7 +220,6 @@ h4 {
 }
 
 .dropdown-btn {
-    color: #F6F4F3;
     background: none;
     text-decoration: none;
     font-family: 'Montserrat', Arial;
@@ -218,14 +227,15 @@ h4 {
     color: white;
     font-size: 18px;
     cursor: pointer;
+    font-weight: 400;
 }
 
 /* Footer */
 .footer-container {
-    margin-top: 40px;
+    margin-top: 2em;
     background-color: #232F5D;
     width: 100%;
-    height: 100px;
+    height: 5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -235,7 +245,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: .25em;
 }
 
 .social__img {
@@ -266,8 +276,8 @@ h4 {
 
 .footer__bullet {
     background-color: #F6F4F3;
-    width: 5px;
-    height: 5px;
+    width: .25em;
+    height: .25em;
     border-radius: 100%;
     margin: 0 30px;
 }
@@ -287,6 +297,7 @@ h4 {
 
 #homepage-intro__background {
     width: 100vw;
+    height: 350px;
     object-fit: cover;
     margin-bottom: -1.5vh;
     opacity: .5;
@@ -295,7 +306,8 @@ h4 {
 #homepage-intro__info-container {
     position: absolute;
     top: 30%;
-    left: 8%;
+    /* left: 148px; */
+    left: 95px;
     z-index: 1;
 }
 
@@ -333,12 +345,13 @@ h4 {
 }
 
 .application__title {
-    padding: 15px 0;
+    padding: .6 0;
 }
 
 .application__intro {
     text-align: center;
-    font-size: .8em;
+    font-size: .7em;
+    line-height: 1.4em;
 }
 
 .application__btn {
@@ -348,7 +361,6 @@ h4 {
     top: 50%;
     cursor: pointer;
     transform: translateY(-50%);
-    line-height: 1;
 }
 
 .application__btn-prev {
@@ -366,12 +378,12 @@ h4 {
 
 .glide-container {
     width: 75%;
+    max-width: 2560px;
     display: flex;
     margin: 0 auto 8em auto;
 }
 
 .glide__slide {
-    border-radius: 10px;
     height: 250px;
     -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
@@ -386,11 +398,16 @@ h4 {
 /* Why PolyChord */
 #why-polychord-container{
     display: flex;
-    padding: 0 100px;
+    padding: 0 5em;
     justify-content: center;
     align-items: flex-start;
     margin: 0 auto;
     margin-bottom: 8em;
+    max-width: 2560px;
+}
+
+#why-polychord__info-container {
+    margin-left: 1.5em;
 }
 
 #why-polychord-img {
@@ -400,13 +417,11 @@ h4 {
 }
 
 #why-polychord__header {
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin-bottom: .85em;
     color: #232F5D;
 }
 
 #why-polychord__text {
-    margin-left: 30px;
     line-height: 1.75em;
 }
 
@@ -419,15 +434,21 @@ h4 {
 
 #facts-container {
     display: flex;
-    max-width: 1200px;
+    max-width: 2560px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 2.5em 0;
 }
 
 #facts-container-outer {
-    padding: 0 100px;
+    padding: 0 5em;
+}
+
+.fact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .fact__header {
@@ -440,7 +461,7 @@ h4 {
     color: #F6F4F3;
     text-align: center;
     max-width: 240px;
-    font-size: 16px;
+    font-size: .8em;
     font-weight: 200;
 }
 
@@ -455,8 +476,8 @@ h4 {
 /* Strengths */
 #strengths-container {
     display: flex;
-    /* max-width: 1200px; */
-    padding: 0 100px;
+    max-width: 2560px;
+    padding: 0 5em;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -467,7 +488,8 @@ h4 {
     display: flex;
     align-items: flex-start;
     margin: 40px 0;
-    max-width: 1150px;
+    max-width: 2560px;
+    padding: 0 5em;
 }
 
 .strength__image {
@@ -489,6 +511,7 @@ h4 {
     background-color: #a2a2a2;
     height: 1px;
     width: 85vw;
+    max-width: 2560px;
     border: 1px #a2a2a2 solid;
     border-radius: 1px;
 }
@@ -597,22 +620,68 @@ h4 {
     margin: 200px 0 -40px -30vw;
 }
 
+.contact-container {
+    position: absolute;
+    display: flex;
+    padding: 0 100px;
+}
+
+.form-container {
+    background-color: #F6F4F3;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, .3);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form__label {
+    font-family: 'Montserrat', Arial;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact__form__field {
+    border: 1px #a2a2a2 solid;
+    border-radius: 2px;
+    font-size: .9em;
+    margin-bottom: 1em;
+}
+
+.contact__form__half-field {
+    border: 1px #a2a2a2 solid;
+    border-radius: 2px;
+    font-size: .9em;
+    margin-bottom: 1em;
+    width: 40%;
+}
+
+
+@media(min-width:3840px){
+    body {
+        font-size: 2em;
+    }
+}
+
+@media(min-width: 2560px){
+    body {
+        font-size: 1.75em;;
+    }
+}
+
+@media(min-width: 1920px){
+    body {
+        font-size: 1.5em;
+    }
+}
 
 @media(max-width: 768px){
     body {
         font-size: .8em;
-    }
-
-    h1 {
-        font-size: 2em
-    }
-    
-    h2 {
-        font-size: 1.5em;
-    }
-    
-    h3 {
-        font-size: 1.4em;
     }
 
     /* Navbar */

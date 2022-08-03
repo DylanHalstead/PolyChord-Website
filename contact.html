@@ -36,7 +36,7 @@
             </a>
             <li class="nav-item-dropdown">
                     <button class="dropdown-btn">Products</button> <i class="material-symbols-rounded">expand_more</i>
-                    <ul class="dropdown-content">
+                    <ul class="dropdown-content" id="products-dropdown-content">
                         <a href="midas.html" class="dropdown-item-link"><li class="dropdown-item">MIDAS</li></a>
                         <a href="polytrack.html" class="dropdown-item-link"><li class="dropdown-item">PolyTrack</li></a>
                         <a href="polystructure.html" class="dropdown-item-link"><li class="dropdown-item">PolyStructure</li></a>
@@ -44,7 +44,7 @@
             </li>
             <li class="nav-item-dropdown">
                     <button class="dropdown-btn">R&D</button> <i class="material-symbols-rounded">expand_more</i>
-                    <ul class="dropdown-content">
+                    <ul class="dropdown-content" id="rd-dropdown-content">
                         <a href="polyaffinity.html" class="dropdown-item-link"><li class="dropdown-item">PolyAffinity</li></a>
                         <a href="polynet.html" class="dropdown-item-link"><li class="dropdown-item">PolyNet</li></a>
                         <a href="food-safety.html" class="dropdown-item-link"><li class="dropdown-item">Food Safety</li></a>
@@ -65,18 +65,43 @@
     </nav>
 
     <div class="contact-container">
-        <div class="container__text"></div>
-        <div class="container__form">
+        <div class="container__text">
+            <h2>Want to Get in Touch?</h2>
+            <p>
+                Fill out this form giving a brief desciption on what you'd like to discuss and we'll get back to you as soon as possible
+            </p>
+        </div>
+        <div class="form-container">
             <form action="">
-                <label id="container__form__label" for="container__form__name">Name</label>
-                <input type="text" class="container__form__half-field" id="container__form__name" name="container__form__name">
-                <label id="container__form__label" for="container__form__company">Company</label>
-                <input type="text" class="container__form__half-field" id="container__form__company" name="container__form__company">
-                <label id="container__form__label" for="container__form__email">Email</label>
-                <input type="text" class="container__form__field" id="container__form__email" name="container__form__email">
-                <label id="container__form__label" for=""></label>
-                input
-                <label id="container__form__label" for=""></label>
+                <div class="contact__form__half-container">
+                    <label class="contact__form__label" for="form__name">Name</label>
+                    <input type="text" class="contact__form__half-field" id="contact__form__name" name="contact__form__name">
+
+                    <label class="contact__form__label" for="contact__form__company">Company</label>
+                    <input type="text" class="contact__form__half-field" id="contact__form__company" name="contact__form__company">
+                </div>
+
+                <div>
+                    <label class="contact__form__label" for="contact__form__email">Email</label>
+                <input type="text" class="contact__form__field" id="contact__form__email" name="container__form__email">
+                </div>
+
+                <div>
+                    <label class="contact__form__label" for="contact__form__why-contacting">Why are you getting in touch?</label>
+                    <select name="contact__form__why-contacting" id="contact__form__why-contacting">
+                        <option value="job">I'm interested in joining the PolyChord team</option>
+                        <option value="info">I'd like to get some more information about some of your products</option>
+                        <option value="partnership">I work for a company that's interested in working with you</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label id="contact__form__label" for="">Message</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <button type="submit" class="contact__form__submit">Submit</button>
             </form>
         </div>
     </div>
