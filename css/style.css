@@ -26,7 +26,7 @@ body {
 }
 
 p {
-    line-height: 1.25em;
+    line-height: 1.75em;
 }
 
 h1 {
@@ -601,12 +601,155 @@ h4 {
     margin: 0 auto 100px auto;
 }
 
+
+/* PRODUCTS */
+.intro-container {
+    display: flex;
+    /* align-items: flex-start; */
+    flex-direction: column;
+    padding: 0 5em;
+    margin: 0 auto;
+    max-width: 2560px;
+}
+
+.intro__title {
+    color: #232F5D;
+    margin-bottom: .75em;
+}
+
+.intro__text {
+    
+}
+
+.outro-container {
+    display: flex;
+    /* align-items: flex-start; */
+    flex-direction: column;
+    padding: 0 5em;
+    margin: 0 auto;
+    max-width: 2560px;
+}
+
+.outro__title {
+    color: #232F5D;
+    margin-bottom: .75em;
+}
+
+.outro__text {
+    
+}
+
+.link {
+    color: #232F5D;
+}
+
 /* MIDAS */
+.with-midas-container {
+    display: flex;
+    padding: 0 5em;
+    margin: 0 auto;
+    max-width: 2560px;
+}
+
+.midas-strengths {
+    display: flex;
+    padding: 0 5em;
+    margin: 0 auto;
+    max-width: 2560px;
+    flex-direction: column;
+}
+
+.midas-strength-container {
+    display: flex;
+}
+
 /* POLYTRACK */
+.polytrack-vis-container {
+    display: flex;
+    padding: 0 5em;
+    margin: 0 auto;
+    max-width: 2560px;
+    flex-direction: column;
+}
+
+.polytrack-vis__image-container {
+    display: flex;
+}
+
+.polytrack-filtering-container {
+    display: flex;
+    padding: 0 5em;
+    margin: 0 auto;
+    max-width: 2560px;
+}
+
+.polytrack-filtering__image {
+    width: 400px;
+}
+
+.polytrack-filtering__title {
+    color: #232F5D;
+}
+
 /* POLYSTRUCTURE */
+.polystructure-prioritization-container {
+    display: flex;
+    padding: 0 5em;
+    margin: 0 auto;
+    max-width: 2560px;
+}
+
+.polystructure-prioritization__image {
+    width: 400px;
+}
+
+.polystructure-confidence-container {
+    display: flex;
+    padding: 0 5em;
+    margin: 0 auto;
+    max-width: 2560px;
+}
+
+.polystructure-confidence__image {
+    width: 300px;
+}
+
 /* POLYAFFINITY */
+.polyaffinity__dynamic-container {
+    display: flex;
+    padding: 0 5em;
+    margin: 0 auto;
+    max-width: 2560px;
+}
+
+.polyaffinity__confidence-container {
+    display: flex;
+    padding: 0 5em;
+    margin: 0 auto;
+    max-width: 2560px;
+}
+
+.polyaffinity__outro-container {
+    display: flex;
+    padding: 0 5em;
+    margin: 0 auto;
+    max-width: 2560px;
+}
+
 /* POLYNET */
+.polynet-box-container {
+    display: flex;
+    padding: 0 5em;
+    margin: 0 auto;
+    max-width: 2560px;
+}
+
+.polynet-box__image {
+    width: 450px;
+}
+
 /* FOOD SCIENCE */
+
 
 /* CONTACT US */
 .contact-background {
