@@ -5,7 +5,7 @@ let sketch1 = new p5(( sketch ) => {
     let particle3;
 
     sketch.setup = () => {
-        canvas = sketch.createCanvas(400, 400);
+        canvas = sketch.createCanvas(450, 450);
         const width = sketch.width
         const height = sketch.height
         // Walls around perimeter
