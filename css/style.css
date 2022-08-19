@@ -521,6 +521,11 @@ h4 {
     padding-right: 30px;
 }
 
+#polychord-past__picture-container {
+    display: flex;
+    align-items: center;
+}
+
 #polychord-past__title {
     color: #232F5D;
     margin-bottom: 20px;
@@ -533,21 +538,13 @@ h4 {
 #polychord-past__image {
     padding-left: 30px;
     width: 400px;
+    height: 80px;
 }
 
 #polychord-present-container {
     padding: 0 100px;
     display: flex;
     margin: 0 auto 150px auto;
-}
-
-#polychord-present__image {
-    width: 400px;
-    padding-right: 30px;
-}
-
-#polychord-present__info-container {
-    padding-left: 30px;
 }
 
 #polychord-present__text {
@@ -800,7 +797,7 @@ h4 {
 }
 
 .polystructure-confidence__image {
-    width: 300px;
+    width: 350px;
 }
 
 .polystructure-prioritization-container {
@@ -814,6 +811,10 @@ h4 {
 .polystructure-prioritization__title {
     color: #232F5D;
     margin-bottom: .5em;
+}
+
+.polystructure-confidence__info {
+    margin-right: 2em;
 }
 
 .polystructure-confidence-container {
@@ -992,6 +993,27 @@ h4 {
     font-family: 'Open Sans', Arial;
     font-size: .75em;
     resize: none;
+}
+
+.contact__form__submit {
+    width: 10em;
+    height: 3em;
+    margin-top: 2em;
+    border: none;
+    border-radius: 3px;
+    background-color: #232F5D;
+    color: #F6F4F3;
+    font-family: 'Open Sans', Arial;
+    transition: 0.5s ease all;
+    border: #232F5D 2px solid;
+}
+
+.contact__form__submit:hover {
+    cursor: pointer;
+    background-color: #F6F4F3;
+    color: #232F5D;
+    font-weight: 600;
+    transition: 0.5s ease all;
 }
 
 @media(max-width: 768px){
