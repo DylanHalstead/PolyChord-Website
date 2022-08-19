@@ -355,6 +355,8 @@ h4 {
     top: 50%;
     cursor: pointer;
     transform: translateY(-50%);
+    /* Remove for carousel */
+    display: none;
 }
 
 .application__btn-prev {
@@ -923,15 +925,12 @@ h4 {
 
 .contact__info-container {
     max-width: 600px;
+    margin-right: 2em;
 }
 
 .contact__info__title {
     color: #232F5D;
     margin-bottom: .5em;
-}
-
-.contact__info__text {
-    font-size: 1.25em;
 }
 
 .form-container {

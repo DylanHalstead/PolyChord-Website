@@ -3,6 +3,8 @@ let sketch1 = new p5(( sketch ) => {
     let particle1;
     let particle2;
     let particle3;
+    const typewriter = document.querySelector('.typewriter');
+    const test = document.querySelector('.with-midas__title')
 
     sketch.setup = () => {
         canvas = sketch.createCanvas(450, 450);
@@ -43,9 +45,9 @@ let sketch1 = new p5(( sketch ) => {
         walls.push(new Boundary(sketch, 4 * width/10, height/10 + 2 * height/7, width/2, height/10 + 2 * height/7));
     
         // Setting up particles
-        particle1 = new Particle(sketch, 230, 148, walls, [4, 139, 168, 51]);
-        particle2 = new Particle(sketch, 70, 200, walls, [92, 173, 72, 51]);
-        particle3 = new Particle(sketch, 150, 256, walls, [243, 91, 4, 51]);
+        particle1 = new Particle(sketch, 220, 385, walls, [4, 139, 168, 51]);
+        particle2 = new Particle(sketch, 345, 225, walls, [92, 173, 72, 51]);
+        particle3 = new Particle(sketch, 150, 278, walls, [243, 91, 4, 51]);
     }
 
     sketch.draw = () => {
@@ -61,6 +63,20 @@ let sketch1 = new p5(( sketch ) => {
         particle2.look();
         particle3.show();
         particle3.look();
+
+        console.log(test.textContent);
+
+        if(typewriter.textContent != "With MIDAS|"){
+            particle1.animate(220, 385, .04, .5);
+            particle2.animate(345, 225, .04, .5);
+            particle3.animate(150, 278, .04, .5);
+        }
+
+        if(typewriter.textContent != "Without MIDAS|"){
+            particle1.animate(182, 148, .04, .5);
+            particle2.animate(45, 84, .04, .5);
+            particle3.animate(45, 84, .04, .5);
+        }
     }
 }, document.querySelector('#midas-canvas-1'));
 
@@ -69,6 +85,7 @@ let sketch2 = new p5(( sketch ) => {
     let particle1;
     let particle2;
     let particle3;
+    let particle4;
 
     sketch.setup = () => {
         canvas = sketch.createCanvas(300, 300);
@@ -109,9 +126,10 @@ let sketch2 = new p5(( sketch ) => {
         walls.push(new Boundary(sketch, 4 * width/10, height/10 + 2 * height/7, width/2, height/10 + 2 * height/7));
     
         // Setting up particles
-        particle1 = new Particle(sketch, 182, 148, walls, [4, 139, 168, 51]);
-        particle2 = new Particle(sketch, 45, 84, walls, [92, 173, 72, 51]);
-        particle3 = new Particle(sketch, 229, 256, walls, [243, 91, 4, 51]);
+        particle1 = new Particle(sketch, 257, 128, walls, [4, 139, 168, 51]);
+        particle2 = new Particle(sketch, 40, 84, walls, [92, 173, 72, 51]);
+        particle3 = new Particle(sketch, 181, 186, walls, [243, 91, 4, 51]);
+        particle4 = new Particle(sketch, 256, 237, walls, [183, 68, 184, 51]);
     }
 
     sketch.draw = () => {
@@ -127,6 +145,8 @@ let sketch2 = new p5(( sketch ) => {
         particle2.look();
         particle3.show();
         particle3.look();
+        particle4.show();
+        particle4.look();
     }
 }, document.querySelector('#midas-canvas-2'));
 
@@ -203,7 +223,7 @@ let sketch3 = new p5(( sketch ) => {
         particle4.show();
         particle4.look();
 
-        // Loop Animate
+        // Animate
         setTimeout(() =>{
             if(step == 0){
                 particle1.updatePos(256, 127)
@@ -262,28 +282,11 @@ let sketch3 = new p5(( sketch ) => {
 }, document.querySelector('#midas-canvas-3'));
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let sketch4 = new p5(( sketch ) => {
     let walls = [];
     let particle1;
     let particle2;
     let particle3;
-    let particle4;
     let step = 0;
     
     sketch.setup = () => {
@@ -325,13 +328,9 @@ let sketch4 = new p5(( sketch ) => {
         walls.push(new Boundary(sketch, 4 * width/10, height/10 + 2 * height/7, width/2, height/10 + 2 * height/7));
     
         // Setting up particles
-        // particle1 = new Particle(sketch, 256, 127, walls, [4, 139, 168, 51]);
-        // particle2 = new Particle(sketch, 45, 230, walls, [92, 173, 72, 51]);
-        particle1 = new Particle(sketch, 182, 148, walls, [4, 139, 168, 51]);
+        particle1 = new Particle(sketch, 152, 87, walls, [4, 139, 168, 51]);
         particle2 = new Particle(sketch, 45, 84, walls, [92, 173, 72, 51]);
         particle3 = new Particle(sketch, 229, 256, walls, [243, 91, 4, 51]);
-        particle3.setOpacity(0);
-        particle4 = new Particle(sketch, width/2, height/2, walls, [183, 68, 184, 51]);
     }
 
     sketch.draw = () => {
@@ -347,22 +346,21 @@ let sketch4 = new p5(( sketch ) => {
         particle2.look();
         particle3.look();
 
-        if(particle1.pos.x == 182 && particle1.pos.y == 148 && particle2.pos.x == 45 && particle2.pos.y == 84 && particle3.opacity == 0){
+        // Animate
+        if(particle1.pos.x == 152 && particle1.pos.y == 87 && particle2.pos.x == 45 && particle2.pos.y == 84){
             step++;
         }
         if(step == 1){
             particle1.animate(256, 127, .04, .01);
             particle2.animate(45, 230, .04, .01);
-            particle3.fade(255, .02);
         }
 
-        if(particle1.pos.x == 256 && particle1.pos.y == 127 && particle2.pos.x == 45 && particle2.pos.y == 230 && particle3.opacity == 255){
+        if(particle1.pos.x == 256 && particle1.pos.y == 127 && particle2.pos.x == 45 && particle2.pos.y == 230){
             step--;
         }
         if(step == 0){
-            particle1.animate(182, 148, .04, .01);
+            particle1.animate(152, 87, .04, .01);
             particle2.animate(45, 84, .04, .01);
-            particle3.fade(0, .02);
         }
     }
 }, document.querySelector('#midas-canvas-4'));
