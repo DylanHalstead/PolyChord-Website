@@ -699,6 +699,7 @@ h4 {
 .polytrack-train__image-container {
     display: flex;
     margin: 4em 0 2em 0;
+    max-width: 100%;
 }
 
 .polytrack-filtering-container {
@@ -1290,6 +1291,32 @@ h4 {
         padding: 0 1.5rem;
     }
     /* MIDAS End */
+    /* Polytrack Start */
+    .polytrack-train-container {
+        padding: 0 1.5rem;
+    }
+    .polytrack-train__image-container {
+        max-width:100%;
+        flex-direction: column-reverse;
+    }
+    .polytrack-train__image__legend {
+        margin: 3rem 0 0;
+    }
+    .polytrack-vis__image__train {
+        max-width:100%;
+    }
+    .polytrack-filtering-container {
+        flex-direction: column-reverse;
+        padding: 0 1.5rem;
+    }
+    .polytrack-filtering__image {
+        max-width:100%;
+    }
+    .polytrack-filtering__info {
+        margin-left:0;
+        margin-bottom:1rem;
+    }
+    /* Polytrack End */
     .footer-container {
         height:auto;
     }
