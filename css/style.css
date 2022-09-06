@@ -1378,6 +1378,19 @@ h4 {
         max-width:100%;
     }
     /* Polyaffinity End */
+    /* PolyNET Start */
+    .polynet-box-container {
+        flex-direction: column-reverse;
+        padding:0 1.5rem;
+    }
+    .polynet-box__info {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+    .polynet-box__image {
+        max-width: 100%;
+    }
+    /* PolyNET End */
     .footer-container {
         height:auto;
     }
