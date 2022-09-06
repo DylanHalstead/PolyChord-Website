@@ -1391,6 +1391,32 @@ h4 {
         max-width: 100%;
     }
     /* PolyNET End */
+    /* Contact form Start */
+    .contact-container {
+        padding: 0 1.5rem;
+        flex-direction: column;
+        position: static;
+    }
+    .contact__info-container {
+        margin-right:0;
+        width:100%;
+        max-width: 100%;
+        margin-bottom:1rem;
+    }
+    .form-container {
+        box-shadow: none;
+        padding:0;
+    }
+    .contact__form__half-container .contact__form__container {
+        max-width:50%;
+    }
+    .contact__form__half-field {
+        max-width:100%
+    }
+    .contact-background {
+        display: none;
+    }
+    /* Contact form End */
     .footer-container {
         height:auto;
     }
