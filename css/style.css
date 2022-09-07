@@ -595,6 +595,9 @@ h4 {
     margin: 0 auto 100px auto;
 }
 
+.timeline {
+    display: none;
+}
 
 /* PRODUCTS */
 .intro-container {
@@ -1258,10 +1261,119 @@ h4 {
         margin:0;
     }
     #polychord-timeline {
-        overflow-y: scroll;
-        width:100%;
-        margin:0;
+        display: none;
     }
+    /* Timeline Container */
+    .polychord-timeline-mobile-container {
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    }
+    
+    /* Card container */
+    .polychord-timeline-mobile__card {
+    position: relative;
+    max-width: 400px;
+    }
+    
+    /* setting padding based on even or odd */
+    .polychord-timeline-mobile__card:nth-child(odd) {
+    padding: 30px 0 30px 30px;
+    }
+    .polychord-timeline-mobile__card:nth-child(even) {
+    padding: 30px 30px 30px 0;
+    }
+    /* Global ::before */
+    .polychord-timeline-mobile__card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: solid #292929;
+    }
+    
+    /* Setting the border of top, bottom, left */
+    .polychord-timeline-mobile__card:nth-child(odd)::before {
+    left: 0px;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-width: 5px 0 5px 5px;
+    border-radius: 50px 0 0 50px;
+    }
+    
+    /* Setting the border of top, bottom, right */
+    .polychord-timeline-mobile__card:nth-child(even)::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+    }
+    
+    /* Removing the border if it is the first card */
+    .polychord-timeline-mobile__card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+    }
+    
+    /* Removing the border if it is the last card  and it's odd */
+    .polychord-timeline-mobile__card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+    }
+    
+    /* Removing the border if it is the last card  and it's even */
+    .polychord-timeline-mobile__card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+    }
+    
+    /* Information about the timeline */
+    .polychord-timeline-mobile__card__info {
+    display: flex;
+    flex-direction: column;
+    background: #232F5D;
+    color: #a2a2a2;
+    border-radius: 10px;
+    padding: 10px;
+    }
+    
+    /* Title of the card */
+    .polychord-timeline-mobile__card__info__title {
+    color: #F6F4F3;
+    position: relative;
+    }
+    
+    /* Timeline dot  */
+    .polychord-timeline-mobile__card__info__title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid #232F5D;
+    }
+    
+    /* text right if the card is even  */
+    .polychord-timeline-mobile__card:nth-child(even) > .polychord-timeline-mobile__card__info > .polychord-timeline-mobile__card__info__title {
+    text-align: right;
+    }
+
+    .polychord-timeline-mobile__card:nth-child(even) > .polychord-timeline-mobile__card__info > .polychord-timeline-mobile__card__info__text {
+        text-align: right;
+    }
+    
+    /* setting dot to the left if the card is odd */
+    .polychord-timeline-mobile__card:nth-child(odd) > .polychord-timeline-mobile__card__info > .polychord-timeline-mobile__card__info__title::before {
+    left: -45px;
+    }
+    
+    /* setting dot to the right if the card is odd */
+    .polychord-timeline-mobile__card:nth-child(even) > .polychord-timeline-mobile__card__info > .polychord-timeline-mobile__card__info__title::before {
+    right: -45px;
+    }
+    
     /* About Us End */
     /* MIDAS Start */
     .intro-container {
