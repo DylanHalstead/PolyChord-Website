@@ -73,7 +73,11 @@
     </div>
 
     <div class="with-midas-container">
-        <div class="midas-canvas" id="midas-canvas-1"></div>
+        <div>
+            <video autoplay muted loop id="with-midas__vis">
+                <source src="images/midas/with-without-midas.mov" type="video/mp4">
+            </video>
+        </div>
         <div class="with-midas__info">
             <h2 class="with-midas__title typewriter"></h2>
             <p class="with-midas__text">
@@ -87,7 +91,7 @@
     <div class="midas-strengths">
         <div class="midas-strength-container">
             <div>
-                <div class="midas-canvas" id="midas-canvas-2"></div>
+                <img src="images/midas/robustness-midas.png" alt="robustness-midas.png" class="midas-strength__vis">
             </div>
             <div class="midas-strength__info">
                 <h2 class="midas-strength__title">Optimising a Network for "Robustness"</h2>
@@ -108,13 +112,16 @@
                 </p>
             </div>
             <div>
-                <div class="midas-canvas" id="midas-canvas-3"></div>
-                <p class="percent img-description-right"><span id="percent-1">69.24</span>%</p>
+                <video autoplay muted loop class="midas-strength__vis">
+                    <source src="images/midas/increasing-sensors-midas.mp4" type="video/mp4">
+                </video>
             </div>
         </div> 
         <div class="midas-strength-container midas-strength-container-final">
             <div>
-                <div class="midas-canvas" id="midas-canvas-4"></div>
+                <video autoplay muted loop class="midas-strength__vis">
+                    <source src="images/midas/constraints-midas.mp4" type="video/mp4">
+                </video>
             </div>
             <div class="midas-strength__info">
                 <h2 class="midas-strength__title">Multiparametric & Flexible</h2>
