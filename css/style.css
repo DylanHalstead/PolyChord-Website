@@ -712,6 +712,7 @@ h4 {
 .polytrack-train__image-container {
     display: flex;
     margin: 4em 0 2em 0;
+    max-width: 100%;
 }
 
 .polytrack-filtering-container {
@@ -1404,13 +1405,139 @@ h4 {
         order: 2;
     }
     .midas-strength__title-right, .midas-strength__text-right {
-        text-align:left;
+        text-align: left;
     }
     .outro-container {
-        margin:1.5rem 0;
+        margin: 1.5rem 0;
         padding: 0 1.5rem;
     }
     /* MIDAS End */
+    /* Polytrack Start */
+    .polytrack-train-container {
+        padding: 0 1.5rem;
+    }
+    .polytrack-train__image-container {
+        max-width:100%;
+        flex-direction: column-reverse;
+    }
+    .polytrack-train__image__legend {
+        margin: 3rem 0 0;
+    }
+    .polytrack-vis__image__train {
+        max-width: 100%;
+    }
+    .polytrack-filtering-container {
+        flex-direction: column-reverse;
+        padding: 0 1.5rem;
+    }
+    .polytrack-filtering__image {
+        max-width:100%;
+    }
+    .polytrack-filtering__info {
+        margin-left:0;
+        margin-bottom:1rem;
+    }
+    /* Polytrack End */
+    /* Polystructure Start */
+    .polystructure-prioritization-container {
+        padding: 0 1.5rem;
+        flex-direction: column;
+    }
+    .polystructure-prioritization__image {
+        max-width: 100%;
+    }
+    .polystructure-prioritization__info {
+        margin: 1rem 0 0;
+    }
+    .polystructure-confidence-container {
+        flex-direction: column;
+        padding: 0 1.5rem;
+        margin-bottom: 4em;
+    }
+    .polystructure-confidence__info {
+        margin-right: 0;
+    }
+    .polystructure-confidence__image-container {
+        margin-top: 1rem;
+    }
+    .polystructure-confidence__image {
+        max-width: 100%;
+    }
+    /* Polystructure End */
+    /* Polyaffinity Start */
+    .polyaffinity-container {
+        margin-top:4rem;
+        flex-direction: column;
+    }
+    .polyaffinity__dynamic-container {
+        padding: 0 1.5rem;
+        margin-top: 1rem;
+        flex-direction: column-reverse;
+    }
+    .polyaffinity__dynamic__info-container {
+        margin-left: 0;
+    }
+    .polyaffinity__dynamic__image {
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+    .polyaffinity__confidence-container {
+        margin-top: 4rem;
+        flex-direction: column;
+        padding: 0 1.5rem;
+    }
+    .polyaffinity__confidence__image {
+        max-width:100%;
+        margin-top:1rem;
+    }
+    .polyaffinity__outro-container {
+        padding: 0 1.5rem;
+        flex-direction: column-reverse;
+        margin-top: 4rem;
+    }
+    .polyaffinity__outro__image {
+        max-width:100%;
+    }
+    /* Polyaffinity End */
+    /* PolyNET Start */
+    .polynet-box-container {
+        flex-direction: column-reverse;
+        padding:0 1.5rem;
+    }
+    .polynet-box__info {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+    .polynet-box__image {
+        max-width: 100%;
+    }
+    /* PolyNET End */
+    /* Contact form Start */
+    .contact-container {
+        padding: 0 1.5rem;
+        flex-direction: column;
+        position: static;
+    }
+    .contact__info-container {
+        margin-right:0;
+        width:100%;
+        max-width: 100%;
+        margin-bottom:1rem;
+    }
+    .form-container {
+        box-shadow: none;
+        padding:0;
+    }
+    .contact__form__half-container .contact__form__container {
+        max-width:50%;
+    }
+    .contact__form__half-field {
+        max-width:100%
+    }
+    .contact-background {
+        display: none;
+    }
+    /* Contact form End */
     .footer-container {
         height:auto;
     }
