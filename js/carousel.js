@@ -7,11 +7,8 @@ new Glide('.glide', {
         1920: {
             perView: 3
         },
-        1024: {
-            perView: 2
-        },
         768: {
-            perView: 1
+            perView: 2
         }
     }
 }).mount();
