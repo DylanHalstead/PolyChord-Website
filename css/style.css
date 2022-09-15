@@ -122,7 +122,6 @@ h4 {
     cursor: pointer;
     border-top: .25em #232F5D solid;
     border-bottom: .25em rgba(246, 244, 243, 0) solid;
-    -webkit-transition: 0.4s ease;
     height: 70px;
     display: flex;
     align-items: center;
@@ -932,7 +931,8 @@ h4 {
     height: 0;
     border-bottom: 100vh solid #232F5D;
     border-left: 130vw solid transparent;
-    margin: 200px 0 -40px -30vw;
+    padding-bottom: 120px;
+    margin: 200px 0 -80px -30vw;
 }
 
 .contact-container {
@@ -1013,10 +1013,13 @@ h4 {
     resize: none;
 }
 
+.g-recaptcha {
+    margin: 1em 0;
+}
+
 .contact__form__submit {
     width: 10em;
     height: 3em;
-    margin-top: 2em;
     border: none;
     border-radius: 3px;
     background-color: #232F5D;
@@ -1065,7 +1068,7 @@ h4 {
     .nav-menu {
         position: absolute;
         left: -150%;
-        top: 50px;
+        top: 70px;
         gap: 0;
         flex-direction: column;
         background-color: #232F5D;
@@ -1079,8 +1082,8 @@ h4 {
     }
 
     .current-nav {
-        border-left: 15px rgba(246, 244, 243, .5) solid !important;
-        border-right: 15px #232F5D solid;
+        border-left: 16px rgba(246, 244, 243, .5) solid !important;
+        border-right: 16px #232F5D solid;
     }
 
     .nav-branding {
@@ -1094,8 +1097,9 @@ h4 {
         width: 100vw;
         border-top: none;
         border-bottom: none;
-        border-left: 15px rgba(246, 244, 243, 0) solid;
-        border-right: 15px #232F5D solid;
+        padding-left: 10px;
+        border-left: 16px rgba(246, 244, 243, 0) solid;
+        border-right: 16px #232F5D solid;
         z-index: 2;
     }
 
@@ -1118,6 +1122,7 @@ h4 {
         border-bottom: none;
         background-color: #232F5D;
         padding-top: 16px;
+        padding-left: 25px;
     }
 
     .dropdown-content {
@@ -1143,6 +1148,7 @@ h4 {
     {
         border-left: 15px rgba(246, 244, 243, 0) solid;
         border-right: 15px #232F5D solid;
+        width: 100%;
         z-index: 4;
     }
 

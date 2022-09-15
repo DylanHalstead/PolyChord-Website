@@ -70,7 +70,7 @@
             </p>
         </div>
         <div class="form-container">
-            <form target="_blank" action="https://formsubmit.co/f1ac4b50899babc8e5909a3776b0b165" method="POST">
+            <form id="contact-form">
                 <div class="contact__form__half-container">
                     <div class="contact__form__container">
                         <label class="contact__form__label" for="form__name">Name</label>
@@ -85,7 +85,7 @@
 
                 <div class="contact__form__container">
                     <label class="contact__form__label" for="contact__form__email">Email</label>
-                    <input type="text" class="contact__form__field" id="contact__form__email" name="contact__form__company">
+                    <input type="text" class="contact__form__field" id="contact__form__email" name="contact__form__email">
                 </div>
 
                 <div class="contact__form__container">
@@ -98,12 +98,12 @@
                     </select>
                 </div>
 
-                <div class="contact__form__container" id="other-container"></div>
-
                 <div class="contact__form__container">
                     <label class="contact__form__label" for="contact__form__message">Message</label>
                     <textarea name="contact__form__message" id="contact__form__message" cols="50" rows="10"></textarea>
                 </div>
+
+                <div class="g-recaptcha" data-sitekey="6LdugPghAAAAACXLjo_wmuvGr2irAhem898o3Q7Q"></div>
 
                 <button type="submit" class="contact__form__submit">Submit</button>
             </form>
@@ -136,6 +136,9 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 </html>
