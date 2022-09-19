@@ -597,7 +597,7 @@ h4 {
     margin: 0 auto 100px auto;
 }
 
-.timeline {
+.polychord-timeline-mobile-container {
     display: none;
 }
 
@@ -764,22 +764,6 @@ h4 {
     border-radius: 50%;
     z-index: -1;
     bottom: 12%;
-}
-
-#polytrack-train__image__vis__sensor-1 {
-    left: 12.8%;
-}
-
-#polytrack-train__image__vis__sensor-2 {
-    left: 16.8%;
-}
-
-#polytrack-train__image__vis__sensor-3 {
-    left: 32.15%;
-}
-
-#polytrack-train__image__vis__sensor-4 {
-    left: 36%;
 }
 
 .polytrack-train__info-container {
@@ -1040,6 +1024,20 @@ h4 {
 #defaultCanvas0 {
     width:450px;
     height:450px;       
+}
+
+.privacy-container {
+    padding: 0 5em;
+}
+
+.privacy__header {
+    text-decoration: underline;
+    margin-top: 2em;
+}
+
+.privacy__sub-header {
+    font-style: italic;
+    font-size: 1.25em;
 }
 
 @media(max-width: 768px) {
