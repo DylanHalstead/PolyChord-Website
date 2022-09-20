@@ -16,47 +16,28 @@
     <title>PolyChord</title>
 </head>
 <body>
-    <nav class="navbar">
-        <img src="images/logos/logo-white.png" alt="nav-logo.png" class="nav-branding">
-
-        <ul class="nav-menu">
-            <a href="index.html" class="nav-link">
-                <li class="nav-item current-nav">
-                    Home
-                </li>
-            </a>
-            <a href="about.html" class="nav-link">
-                <li class="nav-item">
-                    About Us
-                </li>
-            </a>
-            <li class="nav-item-dropdown">
-                    <button class="dropdown-btn">Products</button> <i class="material-symbols-rounded">expand_more</i>
-                    <ul class="dropdown-content" id="products-dropdown-content">
-                        <a href="midas.html" class="dropdown-item-link"><li class="dropdown-item">MIDAS</li></a>
-                        <a href="polytrack.html" class="dropdown-item-link"><li class="dropdown-item">PolyTrack</li></a>
-                        <a href="polystructure.html" class="dropdown-item-link"><li class="dropdown-item">PolyStructure</li></a>
-                    </ul>
+    <nav class="navbar" id='menu'>      
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>  
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><span class='dropdown-arrow'>Products</span>
+                <ul class='sub-menus'>
+                    <li><a href="midas.html">MIDAS</a></li>
+                    <li><a href="polytrack.html">PolyTrack</a></li>
+                    <li><a href="polystructure.html">PolyStructure</a></li>
+                </ul>
             </li>
-            <li class="nav-item-dropdown">
-                    <button class="dropdown-btn">R&D</button> <i class="material-symbols-rounded">expand_more</i>
-                    <ul class="dropdown-content" id="rd-dropdown-content">
-                        <a href="polyaffinity.html" class="dropdown-item-link"><li class="dropdown-item">PolyAffinity</li></a>
-                        <a href="polynet.html" class="dropdown-item-link"><li class="dropdown-item">PolyNet</li></a>
-                    </ul>
+            
+            <li><span class='dropdown-arrow'>R&D</span>
+                <ul class='sub-menus'>
+                    <li><a href="polyaffinity.html">PolyAffinity</a></li>
+                    <li><a href="polynet.html"">PolyNet</a></li>
+                </ul>
             </li>
-            <a href="contact.html" class="nav-link">
-                <li class="nav-item">
-                    Contact Us
-                </li>
-            </a>
+            <li><a href='contact.html'>Contact</a></li>
         </ul>
-
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+        <img src="images/logos/logo-white.png" alt="nav-logo.png" class="nav-branding">
     </nav>
     
     <div id="homepage-intro-container">
