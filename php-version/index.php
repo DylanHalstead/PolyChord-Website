@@ -175,5 +175,5 @@
         </div>
     </div>
 <?php
-    require_once('parts/footers.php');
+    require_once('parts/footer.php');
 ?>
