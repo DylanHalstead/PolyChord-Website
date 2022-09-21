@@ -86,7 +86,7 @@ h4 {
 }
 
 .header__background {
-    width: 100vw;
+    width: 100%;
     height: 17.5em;
     object-fit: cover;
     margin-bottom: -1vh;
@@ -304,7 +304,7 @@ h4 {
 }
 
 #homepage-intro__background {
-    width: 100vw;
+    width: 100%;
     height: 15em;
     object-fit: cover;
     margin-bottom: -1vh;
@@ -924,7 +924,7 @@ h4 {
     display: flex;
     justify-content: space-between;
     padding: 0 100px;
-    width: 100vw;
+    width: 100%;
 }
 
 .contact__info-container {
@@ -1092,7 +1092,7 @@ h4 {
 
     .nav-item {
         padding: 16px 0;
-        width: 100vw;
+        width: 100%;
         border-top: none;
         border-bottom: none;
         padding-left: 10px;
@@ -1115,7 +1115,7 @@ h4 {
     }
 
     .nav-item-dropdown {
-        width: 100vw;
+        width: 100%;
         border-top: none;
         border-bottom: none;
         background-color: #232F5D;
@@ -1191,7 +1191,7 @@ h4 {
         font-size: .95em;
     }
     #why-polychord-container {
-        max-width: 100vw;
+        max-width: 100%;
         flex-direction:column;
         padding:0 1.5rem;
     }
