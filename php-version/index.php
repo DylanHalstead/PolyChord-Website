@@ -96,7 +96,11 @@
 
     <div id="why-polychord-container">
         <div>
-            <img src="images/graphs/himmelblau.gif" alt="himmelblau.gif" id="why-polychord-img">
+            <video id="why-polychord-img" autoplay loop muted playsinline>
+                <source src="images/graphs/himmelblau.webm" type="video/webm">
+                <source src="images/graphs/himmelblau.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
             <p class="img-description">PolyChord Algorithm Parsing Himmelblau Function</p>
         </div>
         <div id="why-polychord__info-container">
