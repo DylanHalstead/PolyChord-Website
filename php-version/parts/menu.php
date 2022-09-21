@@ -19,5 +19,5 @@
         </li>
         <li><a href='contact.php'>Contact</a></li>
     </ul>
-    <img src="images/logos/logo-white.png" alt="nav-logo.png" class="nav-branding">
+    <a class="branding-link" href="index.php"><img src="images/logos/logo-white.png" alt="nav-logo.png" class="nav-branding"></a>
 </nav>

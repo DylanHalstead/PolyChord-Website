@@ -105,15 +105,6 @@ h4 {
 	align-content: center;
 	align-items: center;
 }
-.nav-branding {
-    width: 10em;
-    align-self:
-    center;
-    order:-2;
-    margin-right:
-    auto;
-    margin-left:1.3rem;
-}
 #menu > ul {
     margin-right:1.3rem;
 }
@@ -145,6 +136,17 @@ h4 {
 }
 #menu > ul > li > a, #menu > ul > li > span {
     margin-left: 1.5rem;
+}
+#menu a.branding-link {
+    order: -2;
+    align-self:center;
+    width:10em;
+    height:100%;
+    margin-left:1.3rem ;
+    margin-right:auto;
+}
+#menu .nav-branding {
+    height:100%;
 }
 #menu span {
     cursor: default;
@@ -214,7 +216,8 @@ h4 {
 	#menu ul.sub-menus a {padding-left:25px;}
 	#menu li {display:block;float:none;width:auto;margin: 0;padding: 0;}
 	#menu input, #menu label {position:absolute;top:0;display: inline-block;width: 50px;height: 50px;font-size: 2.5em;left: 0;}
-    .nav-branding{margin-right:1.3rem;}
+    #menu a.branding-link{margin-right:1.3rem;height:auto;width:auto;}
+    #menu .nav-branding{vertical-align: middle;}
 	#menu input {z-index:4}
 	#menu input:checked + label {color:white}
 	#menu input:checked + label:before {content:"\00d7"}
