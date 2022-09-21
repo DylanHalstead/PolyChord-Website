@@ -26,7 +26,16 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script src="js/hamburger.js"></script>
     <script src="js/carousel.js"></script>
+    <script>
+        function updatemenu() {
+        if (document.getElementById('responsive-menu').checked == true) {
+            document.getElementById('menu').style.borderBottomRightRadius = '0';
+            document.getElementById('menu').style.borderBottomLeftRadius = '0';
+        }else{
+            document.getElementById('menu').style.borderRadius = '10px';
+        }
+        }
+    </script>
 </body>
 </html>
