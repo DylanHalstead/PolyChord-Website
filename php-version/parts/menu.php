@@ -3,7 +3,7 @@
     <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="about.php">About</a></li>
-        <li>Products ▾
+        <li><span>Products ▾</span>
             <ul class='sub-menus'>
                 <li><a href="midas.php">MIDAS</a></li>
                 <li><a href="polytrack.php">PolyTrack</a></li>
@@ -11,7 +11,7 @@
             </ul>
         </li>
         
-        <li>R&D ▾
+        <li><span>R&D ▾</span>
             <ul class='sub-menus'>
                 <li><a href="polyaffinity.php">PolyAffinity</a></li>
                 <li><a href="polynet.php"">PolyNet</a></li>

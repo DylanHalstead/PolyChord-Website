@@ -150,6 +150,7 @@ h4 {
 }
 #menu span {
     cursor: default;
+    margin-left: 5px;
 }
 #menu li a:hover {
 	color: #0099CC;
