@@ -2,6 +2,11 @@
     require_once('parts/head.php');
     require_once('parts/menu.php');
 ?>
+    <div class="header-container">
+        <h1 class="header__text">About Us</h1>
+        <img src="images/headers/about-us-header.jpg" alt="about-us-header.jpg" class="header__background">
+    </div>
+    
     <div id="polychord-past-container">
         <div id="polychord-past__info-container">
             <h2 id="polychord-past__title">
