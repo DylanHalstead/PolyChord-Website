@@ -8,7 +8,9 @@
             <h4 id="homepage-intro__text">Don’t just gather data. Get intelligence.</h4>
         </div>
         <video autoplay muted loop poster id="homepage-intro__background">
+            <source src="images/headers/placeholder-intro.webm" type="video/webm">
             <source src="images/headers/placeholder-intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
         </video>
     </div>
 
@@ -21,7 +23,7 @@
                     <li class="glide__slide">
                         <a href="midas.html" class="application__link">
                             <div class="applicaiton">
-                                <img src="images/icons/sensor.png" alt="sensor.png" class="application__icon">
+                                <img loading="lazy" src="images/icons/sensor.png" alt="sensor.png" class="application__icon">
                                 <h4 class="application__title">
                                     MIDAS
                                 </h4>
@@ -34,7 +36,7 @@
                     <li class="glide__slide">
                         <a href="polytrack.html" class="application__link">
                             <div class="applicaiton">
-                                <img src="images/icons/train.png" alt="train.png" class="application__icon">
+                                <img loading="lazy" src="images/icons/train.png" alt="train.png" class="application__icon">
                                 <h4 class="application__title">
                                     PolyTrack
                                 </h4>
@@ -47,7 +49,7 @@
                     <li class="glide__slide">
                         <a href="polystructure.html" class="application__link">
                             <div class="applicaiton">
-                                <img src="images/icons/bridge.png" alt="bridge.png" class="application__icon">
+                                <img loading="lazy" src="images/icons/bridge.png" alt="bridge.png" class="application__icon">
                                 <h4 class="application__title">
                                     PolyStructure
                                 </h4>
@@ -60,7 +62,7 @@
                     <li class="glide__slide">
                         <a href="polynet.html" class="application__link">
                             <div class="applicaiton">
-                                <img src="images/icons/neural.png" alt="neural.png" class="application__icon">
+                                <img loading="lazy" src="images/icons/neural.png" alt="neural.png" class="application__icon">
                                 <h4 class="application__title">
                                     PolyNet
                                 </h4>
@@ -73,7 +75,7 @@
                     <li class="glide__slide">
                         <a href="polyaddinity.html" class="application__link">
                             <div class="applicaiton">
-                                <img src="images/icons/protien.png" alt="protien.png" class="application__icon">
+                                <img loading="lazy" src="images/icons/protien.png" alt="protien.png" class="application__icon">
                                 <h4 class="application__title">
                                     PolyAffinity
                                 </h4>

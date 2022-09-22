@@ -32,7 +32,7 @@
     <h2 class="segment-title">Meet the Team</h2>
     <div id="employees-container">
         <div class="employee">
-            <img src="images/headshot/mhandley-headshot.jpg" alt="mhandley-headshot.jpg" class="employee__image">
+            <img loading="lazy" src="images/headshot/mhandley-headshot.jpg" alt="mhandley-headshot.jpg" class="employee__image">
             <div class="employee__info-container">
                 <h3 class="employee__name">Mike Handley</h3>
                 <p class="employee__title">Chief Executive Officer</p>
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="employee">
-            <img src="images/headshot/whandley-headshot.jpg" alt="whandley-headshot.jpg" class="employee__image">
+            <img loading="lazy" src="images/headshot/whandley-headshot.jpg" alt="whandley-headshot.jpg" class="employee__image">
             <div class="employee__info-container">
                 <h3 class="employee__name">Dr. Will Handley</h3>
                 <p class="employee__title">Chief Technology Officer</p>
@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="employee">
-            <img src="images/headshot/hobson-headshot.jpg" alt="hobson-headshot.jpg" class="employee__image">
+            <img loading="lazy" src="images/headshot/hobson-headshot.jpg" alt="hobson-headshot.jpg" class="employee__image">
             <div class="employee__info-container">
                 <h3 class="employee__name">Professor Mike Hobson</h3>
                 <p class="employee__title">Chief Science Officer</p>
@@ -68,7 +68,7 @@
             </div>
         </div>
         <div class="employee">
-            <img src="images/headshot/lasenby-headshot.jpg" alt="lasenby-headshot.jpg" class="employee__image">
+            <img loading="lazy" src="images/headshot/lasenby-headshot.jpg" alt="lasenby-headshot.jpg" class="employee__image">
             <div class="employee__info-container">
                 <h3 class="employee__name">Professor Antony Lasenby</h3>
                 <p class="employee__title">Academic Advisor</p>
@@ -80,7 +80,7 @@
             </div>
         </div>
         <div class="employee">
-            <img src="images/headshot/watkinson-headshot.jpg" alt="watkinson-headshot.jpg" class="employee__image">
+            <img loading="lazy" src="images/headshot/watkinson-headshot.jpg" alt="watkinson-headshot.jpg" class="employee__image">
             <div class="employee__info-container">
                 <h3 class="employee__name">Dr. Catherine Watkinson</h3>
                 <p class="employee__title">Data Scientist</p>
@@ -93,7 +93,7 @@
             </div>
         </div>
         <div class="employee">
-            <img src="images/headshot/formanek-headshot.jpg" alt="formanek-headshot.jpg" class="employee__image">
+            <img loading="lazy" src="images/headshot/formanek-headshot.jpg" alt="formanek-headshot.jpg" class="employee__image">
             <div class="employee__info-container">
                 <h3 class="employee__name">Dr. Maud Formanek</h3>
                 <p class="employee__title">Data Scientist</p>
@@ -106,7 +106,7 @@
             </div>
         </div>
         <div class="employee">
-            <img src="images/headshot/mason-headshot.jpg" alt="mason-headshot.jpg" class="employee__image">
+            <img loading="lazy" src="images/headshot/mason-headshot.jpg" alt="mason-headshot.jpg" class="employee__image">
             <div class="employee__info-container">
                 <h3 class="employee__name">Dr. Paolo Mason</h3>
                 <p class="employee__title">Data Scientist</p>
@@ -119,7 +119,7 @@
             </div>
         </div>
         <div class="employee">
-            <img src="images/headshot/mcaloone-headshot.jpg" alt="mcaloone-headshot.jpg" class="employee__image">
+            <img loading="lazy" src="images/headshot/mcaloone-headshot.jpg" alt="mcaloone-headshot.jpg" class="employee__image">
             <div class="employee__info-container">
                 <h3 class="employee__name">Dr. Thomas McAloone</h3>
                 <p class="employee__title">Data Scientist</p>
@@ -131,7 +131,7 @@
             </div>
         </div>
         <div class="employee">
-            <img src="images/headshot/stenczel-headshot.jpg" alt="stenczel-headshot.jpg" class="employee__image">
+            <img loading="lazy" src="images/headshot/stenczel-headshot.jpg" alt="stenczel-headshot.jpg" class="employee__image">
             <div class="employee__info-container">
                 <h3 class="employee__name">Dr. Tama Stenczel</h3>
                 <p class="employee__title">Data Scientist</p>
@@ -143,7 +143,7 @@
             </div>
         </div>
         <div class="employee">
-            <img src="images/headshot/yallup-headshot.jpg" alt="yallup-headshot.jpg" class="employee__image">
+            <img loading="lazy" src="images/headshot/yallup-headshot.jpg" alt="yallup-headshot.jpg" class="employee__image">
             <div class="employee__info-container">
                 <h3 class="employee__name">Dr. David Yallup</h3>
                 <p class="employee__title">Postdoctoral Researcher</p>
