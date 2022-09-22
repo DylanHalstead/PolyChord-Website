@@ -2,13 +2,13 @@
         <div class="footer-container">
             <div class="footer__socials-container">
                 <a href="https://twitter.com/polychordcouk" target="_blank" class="social__link" rel="noopener noreferrer">
-                    <img src="images/icons/twitter.png" alt="twitter.png" class="social__img">
+                    <img src="images/icons/twitter.png" alt="twitter.png" loading="lazy" class="social__img">
                 </a>
                 <a href="https://www.linkedin.com/company/polychord-ltd/" target="_blank" class="social__link" rel="noopener noreferrer ">
-                    <img src="images/icons/linkedin.png" alt="linkedin.png" class="social__img">
+                    <img src="images/icons/linkedin.png" alt="linkedin.png" loading="lazy" class="social__img">
                 </a>
                 <a href="https://www.youtube.com/channel/UCeTdzBWCAklZFQk9dv-XrnQ" target="_blank" class="social__link" rel="noopener noreferrer ">
-                    <img src="images/icons/youtube.png" alt="youtube.png" class="social__img">
+                    <img src="images/icons/youtube.png" alt="youtube.png" loading="lazy" class="social__img">
                 </a>
             </div>
             <div class="footer__info-container">
@@ -24,9 +24,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script src="js/carousel.js"></script>
     <script>
         function updatemenu() {
         if (document.getElementById('responsive-menu').checked == true) {
