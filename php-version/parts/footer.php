@@ -25,8 +25,6 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script src="js/carousel.js"></script>
     <script>
         function updatemenu() {
         if (document.getElementById('responsive-menu').checked == true) {
