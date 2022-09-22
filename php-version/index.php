@@ -8,8 +8,8 @@
             <h4 id="homepage-intro__text">Don’t just gather data. Get intelligence.</h4>
         </div>
         <video autoplay muted loop poster id="homepage-intro__background">
-            <source src="images/headers/placeholder-intro.webm" type="video/webm">
-            <source src="images/headers/placeholder-intro.mp4" type="video/mp4">
+            <source src="images/headers/placeholder-intro.webm" type="video/webm; codecs=vp9">
+            <source src="images/headers/placeholder-intro.mp4" type="video/mp4; codecs=avc1.4D401E">
             Your browser does not support the video tag.
         </video>
     </div>
@@ -99,8 +99,8 @@
     <div id="why-polychord-container">
         <div>
             <video id="why-polychord-img" autoplay loop muted playsinline>
-                <source src="images/graphs/himmelblau.webm" type="video/webm">
-                <source src="images/graphs/himmelblau.mp4" type="video/mp4">
+                <source src="images/graphs/himmelblau.webm" type="video/webm; codecs=vp9">
+                <source src="images/graphs/himmelblau.mp4" type="video/mp4; codecs=avc1.4D401E">
                 Your browser does not support the video tag.
             </video>
             <p class="img-description">PolyChord Algorithm Parsing Himmelblau Function</p>
