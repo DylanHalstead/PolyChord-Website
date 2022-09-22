@@ -180,6 +180,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 <?php
     require_once('parts/footer.php');
 ?>
