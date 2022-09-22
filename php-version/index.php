@@ -181,6 +181,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/carousel.js"></script>
 <?php
     require_once('parts/footer.php');
 ?>
