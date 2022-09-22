@@ -151,10 +151,6 @@ h4 {
 #menu span {
     cursor: default;
 }
-#menu span.dropdown-arrow:after {
-	content: "\23F7";
-	margin-left: 5px;
-}
 #menu li a:hover {
 	color: #0099CC;
 	background: #F2F2F2;
