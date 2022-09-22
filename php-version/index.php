@@ -21,7 +21,7 @@
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                     <li class="glide__slide">
-                        <a href="midas.html" class="application__link">
+                        <a href="midas.php" class="application__link">
                             <div class="applicaiton">
                                 <img loading="lazy" src="images/icons/sensor.png" alt="sensor.png" class="application__icon">
                                 <h4 class="application__title">
@@ -34,7 +34,7 @@
                         </a>
                     </li>
                     <li class="glide__slide">
-                        <a href="polytrack.html" class="application__link">
+                        <a href="polytrack.php" class="application__link">
                             <div class="applicaiton">
                                 <img loading="lazy" src="images/icons/train.png" alt="train.png" class="application__icon">
                                 <h4 class="application__title">
@@ -47,7 +47,7 @@
                         </a>
                     </li>
                     <li class="glide__slide">
-                        <a href="polystructure.html" class="application__link">
+                        <a href="polystructure.php" class="application__link">
                             <div class="applicaiton">
                                 <img loading="lazy" src="images/icons/bridge.png" alt="bridge.png" class="application__icon">
                                 <h4 class="application__title">
@@ -60,7 +60,7 @@
                         </a>
                     </li>
                     <li class="glide__slide">
-                        <a href="polynet.html" class="application__link">
+                        <a href="polynet.php" class="application__link">
                             <div class="applicaiton">
                                 <img loading="lazy" src="images/icons/neural.png" alt="neural.png" class="application__icon">
                                 <h4 class="application__title">
@@ -73,7 +73,7 @@
                         </a>
                     </li>
                     <li class="glide__slide">
-                        <a href="polyaddinity.html" class="application__link">
+                        <a href="polyaddinity.php" class="application__link">
                             <div class="applicaiton">
                                 <img loading="lazy" src="images/icons/protien.png" alt="protien.png" class="application__icon">
                                 <h4 class="application__title">
